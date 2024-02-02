@@ -1,3 +1,25 @@
-.nav {
-  color: red;
+.navbar {
+  margin: 2rem auto;
+}
+.navbar .navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbar .navContainer img {
+  max-height: 40px;
+}
+.navbar .navContainer .navList {
+  list-style-type: none;
+}
+.navbar .navContainer .navList li {
+  display: inline;
+  margin-right: 40px;
+}
+.navbar .navContainer .navList li a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+.navbar .navContainer .navList li a:hover {
+  color: hsl(5, 85%, 63%);
 }/*# sourceMappingURL=navbar.module.css.map */
