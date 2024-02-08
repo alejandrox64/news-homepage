@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 70px;
+    column-gap: 30px;
+    row-gap: 70px;
 
     .mainNew {
         width: 100%;
@@ -44,12 +44,44 @@
                     color: navbar.$Dark-grayish-blue;
                 }
                 button {
-                    width: 50%;
-                    padding: 20px 30px;
-                    border: 1px solid navbar.$Very-dark-blue;
+                    width: 57%;
+                    padding: 17px 30px;
+                    border: none;
                     color: white;
-                    background-color: navbar.$Very-dark-blue;
-                    letter-spacing: 2px;
+                    background-color: navbar.$Soft-red;
+                    letter-spacing: 5px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: navbar.$Very-dark-blue;
+                    }
+                }
+            }
+        }
+    }
+    .rankingNews {
+        grid-column: 1/4;
+        grid-row: 5/6;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        .cardRankingNews {
+            height: 127px;
+            display: flex;
+            div {
+                margin-left: 25px;
+                h2 {
+                    color: navbar.$Grayish-blue;
+                    font-size: 2rem;
+                    margin: 0 0 15px 0;
+                }
+                h3 {
+                    margin: 0 0 15px 0;
+                }
+                p {
+                    margin: 0;
+                    color: navbar.$Dark-grayish-blue;
                 }
             }
         }

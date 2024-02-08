@@ -35,8 +35,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 70px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 70px;
 }
 .container .mainNew {
   width: 100%;
@@ -71,10 +72,41 @@
   color: hsl(236, 13%, 42%);
 }
 .container .mainNew .contentMainNew .containerDescriptionMainNew button {
-  width: 50%;
-  padding: 20px 30px;
-  border: 1px solid hsl(240, 100%, 5%);
+  width: 57%;
+  padding: 17px 30px;
+  border: none;
   color: white;
+  background-color: hsl(5, 85%, 63%);
+  letter-spacing: 5px;
+}
+.container .mainNew .contentMainNew .containerDescriptionMainNew button:hover {
+  cursor: pointer;
   background-color: hsl(240, 100%, 5%);
-  letter-spacing: 2px;
+}
+.container .rankingNews {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.container .rankingNews .cardRankingNews {
+  height: 127px;
+  display: flex;
+}
+.container .rankingNews .cardRankingNews div {
+  margin-left: 25px;
+}
+.container .rankingNews .cardRankingNews div h2 {
+  color: hsl(233, 8%, 79%);
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+}
+.container .rankingNews .cardRankingNews div h3 {
+  margin: 0 0 15px 0;
+}
+.container .rankingNews .cardRankingNews div p {
+  margin: 0;
+  color: hsl(236, 13%, 42%);
 }/*# sourceMappingURL=app.module.css.map */

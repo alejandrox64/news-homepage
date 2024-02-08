@@ -1,7 +1,29 @@
 import Navbar from "./components/Navbar";
 import styles from "./styles/app.module.css";
+import RankingNews from "./components/RankingNews";
 
 function App() {
+  const rankOfNews = [
+    {
+      img: "../public/images/image-retro-pcs.jpg",
+      rankPosition: "01",
+      title: "Reviving Retro PCs",
+      resumeOfNew: "What happens when old PCs are given modern upgrades?",
+    },
+    {
+      img: "../public/images/image-top-laptops.jpg",
+      rankPosition: "02",
+      title: "Top 10 Laptops of 2022",
+      resumeOfNew: "Our best picks for various needs and budgets.",
+    },
+    {
+      img: "../public/images/image-gaming-growth.jpg",
+      rankPosition: "03",
+      title: "The Growth of Gaming",
+      resumeOfNew: "How the pandemic has sparked fresh opportunities.",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -22,9 +44,7 @@ function App() {
             </div>
           </div>
         </section>
-        {/* 
-        <section className={styles.rankingNews}></section>
-        <article className={styles.moreNews}></article> */}
+        <RankingNews news={rankOfNews} />
       </div>
     </>
   );
