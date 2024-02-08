@@ -1,10 +1,11 @@
 .navbar {
   margin: 2rem auto;
+  width: 1110px;
 }
 .navbar .navContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .navbar .navContainer img {
   max-height: 40px;
@@ -22,4 +23,7 @@
 }
 .navbar .navContainer .navList li a:hover {
   color: hsl(5, 85%, 63%);
+}
+.navbar .navContainer .navList li:last-child {
+  margin-right: 0;
 }/*# sourceMappingURL=navbar.module.css.map */

@@ -12,11 +12,12 @@ $Very-dark-blue: hsl(240, 100%, 5%);
 
 .navbar {
     margin: 2rem auto;
+    width: 1110px;
 
     .navContainer {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
 
         img {
             max-height: 40px;
@@ -38,6 +39,10 @@ $Very-dark-blue: hsl(240, 100%, 5%);
                     }
                 }
             }
+            
+        }
+        .navList li:last-child {
+            margin-right: 0;
         }
     }
 }

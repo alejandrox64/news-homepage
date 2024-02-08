@@ -1,0 +1,57 @@
+@use "./navbar.module";
+
+.container {
+    margin: 1px auto;
+    width: 1110px;
+    height: 710px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 70px;
+
+    .mainNew {
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 1/5;
+
+        img {
+            width: 100%;
+            height: 55%;
+        }
+
+        .contentMainNew {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
+            padding-top: 35px;
+
+            .titleMainNew {
+                width: 50%;
+                margin: 0;
+                font-weight: 800;
+                font-size: 3rem;
+            }
+
+            .containerDescriptionMainNew {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .descriptonMainNew {
+                    margin: 0;
+                    color: navbar.$Dark-grayish-blue;
+                }
+                button {
+                    width: 50%;
+                    padding: 20px 30px;
+                    border: 1px solid navbar.$Very-dark-blue;
+                    color: white;
+                    background-color: navbar.$Very-dark-blue;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
