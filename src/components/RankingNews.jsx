@@ -9,7 +9,9 @@ const RankingNews = ({ news }) => {
           <img src={img} />
           <div>
             <h2>{rankPosition}</h2>
-            <h3>{title}</h3>
+            <h3>
+              <a>{title}</a>
+            </h3>
             <p>{resumeOfNew}</p>
           </div>
         </article>

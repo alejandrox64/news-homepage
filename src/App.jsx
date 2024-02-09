@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import styles from "./styles/app.module.css";
 import RankingNews from "./components/RankingNews";
+import MoreNews from "./components/MoreNews";
 
 function App() {
   const rankOfNews = [
@@ -45,6 +46,7 @@ function App() {
           </div>
         </section>
         <RankingNews news={rankOfNews} />
+        <MoreNews />
       </div>
     </>
   );
