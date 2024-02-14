@@ -30,7 +30,14 @@ function App() {
       <Navbar />
       <div className={styles.container}>
         <section className={styles.mainNew}>
-          <img src="../public/images/image-web-3-desktop.jpg" />
+          <img
+            src="../public/images/image-web-3-desktop.jpg"
+            className={styles.desktopMainImage}
+          />
+          <img
+            src="../public/images/image-web-3-mobile.jpg"
+            className={styles.movileMainImage}
+          />
           <div className={styles.contentMainNew}>
             <h1 className={styles.titleMainNew}>
               The Bright Future of Web 3.0?
@@ -45,16 +52,8 @@ function App() {
             </div>
           </div>
         </section>
-        <RankingNews news={rankOfNews} />
         <MoreNews />
-      </div>
-      <div className={styles.attribution}>
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="https://github.com/alejandrox64">Alejandro Rojas</a>
-        .
+        <RankingNews news={rankOfNews} />
       </div>
     </>
   );

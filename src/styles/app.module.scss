@@ -16,9 +16,12 @@
         grid-column: 1/3;
         grid-row: 1/5;
 
-        img {
+        .desktopMainImage {
             width: 100%;
             height: 55%;
+        }
+        .movileMainImage {
+            display: none;
         }
 
         .contentMainNew {
@@ -134,3 +137,71 @@
     margin: 1.5rem auto;
     text-align: center;
 }
+
+@media screen and (max-width: 375px) {
+
+    html {
+        height: -webkit-fill-available;
+    }
+    body {
+        height: -webkit-fill-available;
+    }
+    
+
+        .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .mainNew {
+            display: flex;
+            flex-direction: column;
+            .desktopMainImage {
+                display: none;
+            }
+            .movileMainImage {
+                display: block;
+                margin: 0 15px;
+            }
+            .contentMainNew {
+                display: flex;
+                flex-direction: column;
+
+                .titleMainNew {
+                    width: 75%;
+                    margin: 0 15px;
+                    font-size: 2.5rem;
+                }
+                .containerDescriptionMainNew {
+                    margin: 15px;
+                    width: 100%;
+                    .descriptonMainNew {
+                        line-height: 1.5rem;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .moreNews {
+            margin: 0 15px;
+        }
+        .rankingNews {
+            display: flex;
+            flex-direction: column;
+            margin: 0 15px;
+            .cardRankingNews {
+                margin-bottom: 30px;
+
+                img {
+                width: 100px;
+                height: 128px;
+                }
+            }
+            
+        }
+    }
+    
+    .attribution {
+        margin-top: 0;
+    }
+}
+

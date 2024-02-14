@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 375px) {
+  .navbar {
+    width: 100%;
+    margin: 2rem 15px;
+  }
   .navbar .navContainer .hamburguerMenu {
     display: flex;
   }
@@ -39,12 +43,12 @@
     display: none;
   }
   .navbar .navContainer .hamburguerMenu .lblMenu {
-    margin: 10px;
+    margin: 15px;
     position: relative;
   }
   .navbar .navContainer .hamburguerMenu .lblMenu span {
     position: absolute;
-    right: 0;
+    right: 15px;
     width: 40px;
     height: 3px;
     background-color: black;
