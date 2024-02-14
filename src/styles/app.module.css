@@ -148,4 +148,9 @@
 }
 .container .moreNews a:hover {
   color: hsl(35, 77%, 62%);
+}
+
+.attribution {
+  margin: 1.5rem auto;
+  text-align: center;
 }/*# sourceMappingURL=app.module.css.map */

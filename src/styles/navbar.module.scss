@@ -25,6 +25,10 @@ $Very-dark-blue: hsl(240, 100%, 5%);
             max-height: 40px;
         }
 
+        .hamburguerMenu {
+            display: none;
+        }
+
         .navList {
             list-style-type: none;
 
@@ -45,6 +49,55 @@ $Very-dark-blue: hsl(240, 100%, 5%);
         }
         .navList li:last-child {
             margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar {
+        .navContainer {
+            .hamburguerMenu {
+                display: flex;
+                input {
+                    display: none;
+                }
+                .lblMenu {
+                    margin: 10px;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        right: 0;
+                        width: 40px;
+                        height: 3px;
+                        background-color: black;
+                        transition: all 400ms ease;
+                    }
+                    & > span:nth-child(2) {
+                        top: 11px;
+                    }
+                    & > span:nth-child(3) {
+                        top: 22px;
+                    }
+
+                }
+                .buttonMenu:checked + .lblMenu {
+                    & > span:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 10px;
+                    }
+                    & > span:nth-child(2) {
+                        opacity: 0;
+                    }
+                    & > span:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 10px;
+                    }
+                }
+            }
+            .navList {
+                display: none;
+            }
         }
     }
 }

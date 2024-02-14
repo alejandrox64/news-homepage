@@ -10,6 +10,9 @@
 .navbar .navContainer img {
   max-height: 40px;
 }
+.navbar .navContainer .hamburguerMenu {
+  display: none;
+}
 .navbar .navContainer .navList {
   list-style-type: none;
 }
@@ -26,4 +29,45 @@
 }
 .navbar .navContainer .navList li:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar .navContainer .hamburguerMenu {
+    display: flex;
+  }
+  .navbar .navContainer .hamburguerMenu input {
+    display: none;
+  }
+  .navbar .navContainer .hamburguerMenu .lblMenu {
+    margin: 10px;
+    position: relative;
+  }
+  .navbar .navContainer .hamburguerMenu .lblMenu span {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    transition: all 400ms ease;
+  }
+  .navbar .navContainer .hamburguerMenu .lblMenu > span:nth-child(2) {
+    top: 11px;
+  }
+  .navbar .navContainer .hamburguerMenu .lblMenu > span:nth-child(3) {
+    top: 22px;
+  }
+  .navbar .navContainer .hamburguerMenu .buttonMenu:checked + .lblMenu > span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  .navbar .navContainer .hamburguerMenu .buttonMenu:checked + .lblMenu > span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar .navContainer .hamburguerMenu .buttonMenu:checked + .lblMenu > span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  .navbar .navContainer .navList {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.module.css.map */

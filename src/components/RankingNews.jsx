@@ -5,7 +5,7 @@ const RankingNews = ({ news }) => {
   return (
     <section className={styles.rankingNews}>
       {news.map(({ img, rankPosition, title, resumeOfNew }) => (
-        <article className={styles.cardRankingNews}>
+        <article className={styles.cardRankingNews} key={rankPosition}>
           <img src={img} />
           <div>
             <h2>{rankPosition}</h2>
