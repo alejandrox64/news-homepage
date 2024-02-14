@@ -133,20 +133,8 @@
     }
 }
 
-.attribution {
-    margin: 1.5rem auto;
-    text-align: center;
-}
 
 @media screen and (max-width: 375px) {
-
-    html {
-        height: -webkit-fill-available;
-    }
-    body {
-        height: -webkit-fill-available;
-    }
-    
 
         .container {
         display: flex;
@@ -199,9 +187,6 @@
             
         }
     }
-    
-    .attribution {
-        margin-top: 0;
-    }
+ 
 }
 

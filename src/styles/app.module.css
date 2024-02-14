@@ -200,18 +200,7 @@
   color: hsl(35, 77%, 62%);
 }
 
-.attribution {
-  margin: 1.5rem auto;
-  text-align: center;
-}
-
 @media screen and (max-width: 375px) {
-  html {
-    height: -webkit-fill-available;
-  }
-  body {
-    height: -webkit-fill-available;
-  }
   .container {
     display: flex;
     flex-direction: column;
@@ -259,8 +248,5 @@
   .container .rankingNews .cardRankingNews img {
     width: 100px;
     height: 128px;
-  }
-  .attribution {
-    margin-top: 0;
   }
 }/*# sourceMappingURL=app.module.css.map */
