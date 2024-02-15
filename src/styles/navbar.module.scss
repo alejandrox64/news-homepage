@@ -98,7 +98,26 @@ $Very-dark-blue: hsl(240, 100%, 5%);
                 }
             }
             .navList {
-                display: none;
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                right: 0;
+                margin: 0;
+                height: 100%;
+                width: 50%;
+                padding: 5rem 1rem;
+            
+                background-color: white;
+
+                & > li {
+                    margin-top: 10px;
+                    & > a {
+                        color: $Very-dark-blue;
+                        font-weight: 500;
+                    }
+                    
+                }
             }
         }
     }

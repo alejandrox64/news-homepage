@@ -72,7 +72,19 @@
     top: 10px;
   }
   .navbar .navContainer .navList {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    padding: 5rem 1rem;
+    background-color: white;
+  }
+  .navbar .navContainer .navList > li {
+    margin-top: 10px;
   }
 }
 .container {

@@ -26,7 +26,7 @@ function App() {
   ];
 
   return (
-    <>
+    <main>
       <Navbar />
       <div className={styles.container}>
         <section className={styles.mainNew}>
@@ -55,7 +55,7 @@ function App() {
         <MoreNews />
         <RankingNews news={rankOfNews} />
       </div>
-    </>
+    </main>
   );
 }
 
